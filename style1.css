@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap");
+
+html{
+    background: rgb(34, 34, 34);
+    color: white;
+    letter-spacing: 1px;
+}
 body{
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
-    font-family: "微軟正黑體";
+    font-family: "Noto Serif TC";
     line-height: 24px;
+    font-size: 20px;
 }
 
 h1{
@@ -12,11 +20,75 @@ h1{
 
 .part{
     margin: 60px 0 0 0;
-    box-shadow: gray 0 0 3px;
+    box-shadow: rgb(255, 254, 254) 0 0 5px;
     border-radius: 10px;
     padding: 10px 50px 10px 50px;
 }
 
 .part:last-child{
     margin: 60px 0 60px 0;
+}
+
+a{
+    text-decoration: none;
+    color: #18dcff;
+    font-weight: 700;
+}
+
+a:hover{
+    color: rgb(170, 231, 255);
+}
+
+.graph{
+    list-style: none;
+    font-size: 24px;
+    font-style: italic;
+    margin: 60px 0 0 0;
+    text-align: center;
+}
+
+
+.user h3{
+    color:#ffb8b8;
+}
+.user-extra h3{
+    color:#f8c291;
+}
+.manager h3{
+    color: #b8e994;
+}
+
+
+.example{
+    display: flex;
+    justify-content: space-around;
+}
+.phone{
+    width: 200px;
+    height: 320px;
+    border:3px solid white;
+}
+.box{
+    position: relative;
+    color:black;
+    width: 200px;
+    height: 30px;
+    background: rgb(228, 228, 228);
+    border:1px solid black;
+    text-align: right;
+    font-weight: 700;
+}
+.box::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border:1px solid black;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+b{
+    display: block;
+    text-align: center;
+    margin: 20px 0 0 0;
 }
