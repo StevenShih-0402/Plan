@@ -38,6 +38,9 @@ a{
 a:hover{
     color: rgb(170, 231, 255);
 }
+li{
+    margin: 50px 0 0 0;
+}
 
 .graph{
     list-style: none;
