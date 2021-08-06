@@ -1,40 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap");
 html{
-    background: rgb(34, 34, 34);
-    color: white;
+    background: #adffff;
+    color: black;
     letter-spacing: 1px;
+    font-weight: 500;
 }
 body{
-    width: 65%;
-    margin: 0 auto;
+    margin: 0;
     font-family: "Noto Serif TC";
     line-height: 24px;
     font-size: 20px;
 }
 
+.header{
+    background: rgba(9, 132, 227,0.2);
+    margin: 0;
+    padding: 30px 0 40px 0;
+}
+
 h1{
     text-align: center;
-    padding: 30px 0 0 0;
+    margin: 0;
+}
+
+.content{
+    width: 65%;
+    margin: 0 auto;
 }
 
 .part{
     margin: 60px 0 0 0;
-    box-shadow: gray 0 0 3px;
+    box-shadow: #0984e3 0 0 5px;
     border-radius: 10px;
     padding: 10px 50px 10px 50px;
+    background: rgba(9, 132, 227,0.2);
 }
 
 .part:last-child{
     margin: 60px 0 60px 0;
 }
+.part:last-child li{
+    margin: 20px 0 0 0;
+}
 
 a{
     text-decoration: none;
-    color: #18dcff;
+    color: #218c74;
     font-weight: 700;
 }
 a:hover{
-    color: rgb(170, 231, 255);
+    color: #33d9b2;
 }
 
 li{
