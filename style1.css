@@ -108,3 +108,9 @@ b{
     text-align: center;
     margin: 20px 0 0 0;
 }
+
+.footer{
+    background: rgba(45, 52, 54, 0.9);
+    text-align: center;
+    padding: 25px;
+}

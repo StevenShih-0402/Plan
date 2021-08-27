@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap");
 html{
-    background: #adffff;
+    background: #1abc9c;
     color: black;
     letter-spacing: 1px;
     font-weight: 500;
@@ -13,7 +13,7 @@ body{
 }
 
 .header{
-    background: rgba(9, 132, 227,0.2);
+    background: #16a085;
     margin: 0;
     padding: 30px 0 40px 0;
 }
@@ -30,10 +30,10 @@ h1{
 
 .part{
     margin: 60px 0 0 0;
-    box-shadow: #0984e3 0 0 5px;
+    box-shadow: rgba(22, 160, 133,1.0) 0 0 5px;
     border-radius: 10px;
     padding: 10px 50px 10px 50px;
-    background: rgba(9, 132, 227,0.2);
+    background: rgba(22, 160, 133,0.5);
 }
 
 .part:last-child{
@@ -45,19 +45,27 @@ h1{
 
 a{
     text-decoration: none;
-    color: #218c74;
+    color: rgba(44, 62, 80,1.0);
     font-weight: 700;
 }
 a:hover{
-    color: #33d9b2;
+    color: rgba(44, 62, 80,0.7);
 }
 
 li{
     margin: 50px 0 0 0;
 }
 
+.box{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
 .footer{
-    background: rgba(9, 132, 227,0.2);
+    background: #16a085;
     text-align: center;
     padding: 25px;
 }
