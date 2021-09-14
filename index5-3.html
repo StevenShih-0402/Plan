@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北風與太陽</title>
+    <link rel="stylesheet" href="style5-3.css">
+</head>
+
+<body>
+    <div class="player"></div>
+    <div class="wind"></div>
+    <div class="sun"></div>
+    <div class="item"></div>
+    <div class="textbox">
+        <div class="text" id="text1">聊天聊天</div>
+        <div class="text" id="text2">找到道具了！</div>
+    </div>
+    <div class="exit">EXIT</div>
+    
+    <script>
+        var player = document.querySelector(".player");
+
+        var textbox = document.querySelector(".textbox");
+    
+        function css(el, attr, val) {
+            if (val == undefined) {
+                return parseFloat(getComputedStyle(el)[attr]);
+            }
+            // 設定哪些樣式
+            // el.style[attr]=val+'px';
+            switch (attr) {
+                case 'opacity':
+                case 'zIndex':
+                    el.style[attr] = val;
+                    break;
+                default:
+                    el.style[attr] = val + 'px';
+            }
+        }
+    
+        document.addEventListener("keydown", function(e){
+            if(e.keyCode == 38){        /*上*/
+                var t=css(player,'top');
+                css(player,'top',t-5);
+            }
+            if(e.keyCode == 39){        /*右*/
+                var l=css(player,'left');
+                css(player,'left',l+5);
+            }
+            if(e.keyCode == 40){        /*下*/
+                var t=css(player,'top');
+                css(player,'top',t+5);
+            }
+            if(e.keyCode == 37){        /*左*/
+                var l=css(player,'left');
+                css(player,'left',l-5);
+            }
+
+            if(e.keyCode == 65){        /*A*/
+                textbox.style.display = "block";
+                text1.style.display = "block";
+            }
+            if(e.keyCode == 90){        /*Z*/
+                textbox.style.display = "block";
+                text2.style.display = "block";
+            }
+            if(e.keyCode == 88){        /*X*/
+                textbox.style.display = "none";
+                text1.style.display = "none";
+                text2.style.display = "none";
+            }
+        })
+
+        var exit = document.querySelector(".exit");
+        exit.addEventListener("click", function(){
+            window.location.href="index5-2.html";
+        })
+    </script>
+</body>
+</html>

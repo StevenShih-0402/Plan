@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《伊索寓言》</title>
+    <link rel="stylesheet" href="style5-1.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="center">
+        <h1 class="animate__animated animate__backInUp">伊索寓言</h1>
+        <h2 class="animate__animated animate__fadeInDown animate__delay-1s">Aesop's Fables</h2>
+        <div class="choose">
+            <h3 class="animate__animated animate__bounceInLeft animate__delay-2s" onclick="delay()" id="change">-故事開始-</h3>
+            <h3 class="animate__animated animate__bounceInRight animate__delay-2s">-繼續閱讀-</h3>
+        </div>
+    </div>
+
+    <script>
+        const element = document.querySelector('.center');
+        function delay(){
+            element.classList.add('animate__animated', 'animate__fadeOut');
+
+            element.addEventListener('animationend', () => {
+                window.location.href="index5-2.html";
+            });
+        };
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>選單</title>
+    <link rel="stylesheet" href="style5-2.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="center">
+        <ul> 
+            <li class="animate__animated animate__bounceInLeft" onclick="intro1()">
+                <h3>北風與太陽</h3> 
+            </li>
+
+            <li class="animate__animated animate__bounceInLeft" onclick="intro2()">
+                <h3>烏鴉喝水</h3>
+            </li>
+
+            <li class="animate__animated animate__bounceInLeft" onclick="intro3()">
+                <h3>龜兔賽跑</h3>
+            </li>
+
+            <li class="animate__animated animate__bounceInLeft" onclick="intro4()">
+                <h3>烏龜和老鷹</h3>
+            </li>
+
+        </ul>
+        <ul>
+            <li class="animate__animated animate__bounceInRight" onclick="intro5()">
+                <h3>金銀斧頭</h3>
+            </li>
+
+            <li class="animate__animated animate__bounceInRight" onclick="intro6()">
+                <h3>老鼠開會</h3>
+            </li>
+
+            <li class="animate__animated animate__bounceInRight" onclick="intro7()">
+                <h3>被同伴驅逐的蝙蝠</h3>
+            </li>
+
+            <li class="animate__animated animate__bounceInRight" onclick="intro8()">
+                <h3>熊和兩個旅行人</h3>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="page">
+        <li>▲</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>▼</li>
+    </ul>
+
+    <button id="home">回首頁</button>
+
+    <div class="blackview" id="blackview"">
+
+        <div class="ready" id="ready1">
+            <h4>-北風與太陽-</h4>
+            <p>　　北風與太陽為了誰的力量比較強而起了爭執，就在他們爭論到一半時，有位旅人經過了此地......</p>
+        </div>
+        <div class="ready" id="ready2">
+            <h4>-烏鴉喝水-</h4>
+            <p>　　口渴的烏鴉到處尋找可以喝水的地方，不知找了多久，他終於看到了一支水瓶......</p>
+        </div>
+        <div class="ready" id="ready3">
+            <h4>-龜兔賽跑-</h4>
+            <p>　　高傲且急躁的兔子、低調且溫吞的烏龜，由於個性上的極端差異，兩者對於彼此總是互看不順眼......</p>
+        </div>
+        <div class="ready" id="ready4">
+            <h4>-烏龜和老鷹-</h4>
+            <p>　　天空，對於陸地上的生物而言，那是只能遠觀的未知領域，不過就在某天，幸運的烏龜遇到了能一窺天空的機會......</p>
+        </div>
+        <div class="ready" id="ready5">
+            <h4>-金銀斧頭-</h4>
+            <p>　　樵夫每天靠著砍柴維生，手上的斧頭是他唯一的生財工具，然而在一次意外中，他的斧頭卻掉到湖裡了......</p>
+        </div>
+        <div class="ready" id="ready6">
+            <h4>-老鼠開會-</h4>
+            <p>　　老鼠們在貓的捕獵下，每天過著提心吊膽的生活，為了活命，鼠群們決定召開一場會議......</p>
+        </div>
+        <div class="ready" id="ready7">
+            <h4>-被同伴驅逐的蝙蝠-</h4>
+            <p>　　天上的鳥群和地上的獸群，多年來因為許多大大小小的原因而引起多次的爭鬥，雙方你來我往、互不相讓......</p>
+        </div>
+        <div class="ready" id="ready8">
+            <h4>-熊和兩個旅行人-</h4>
+            <p>　　兩個好朋友相約一起去森林旅行，沒想到走著走著，居然撞見了一隻大黑熊......</p>
+        </div>
+
+        <div class="start">
+            <button id="enter">進入故事</button>
+            <button id="back" onclick="goback()">返回目錄</button>
+        </div>
+        
+    </div>
+    
+    <script>
+        var ready1 = document.getElementById("ready1"),
+            ready2 = document.getElementById("ready2"),
+            ready3 = document.getElementById("ready3"),
+            ready4 = document.getElementById("ready4"),
+            ready5 = document.getElementById("ready5"),
+            ready6 = document.getElementById("ready6"),
+            ready7 = document.getElementById("ready7"),
+            ready8 = document.getElementById("ready8");
+
+        var blackview = document.getElementById("blackview"),
+            enter = document.getElementById("enter"),
+            back = document.getElementById("back"),
+            home = document.getElementById("home");
+
+        function intro1(){
+            blackview.style.display = "block";
+            ready1.style.display = "block";
+        };
+        function intro2(){
+            blackview.style.display = "block";
+            ready2.style.display = "block";
+        };
+        function intro3(){
+            blackview.style.display = "block";
+            ready3.style.display = "block";
+        };
+        function intro4(){
+            blackview.style.display = "block";
+            ready4.style.display = "block";
+        };
+        function intro5(){
+            blackview.style.display = "block";
+            ready5.style.display = "block";
+        };
+        function intro6(){
+            blackview.style.display = "block";
+            ready6.style.display = "block";
+        };
+        function intro7(){
+            blackview.style.display = "block";
+            ready7.style.display = "block";
+        };
+        function intro8(){
+            blackview.style.display = "block";
+            ready8.style.display = "block";
+        };
+
+        function goback(){
+            blackview.style.display = "none";
+            ready1.style.display = "none";
+            ready2.style.display = "none";
+            ready3.style.display = "none";
+            ready4.style.display = "none";
+            ready5.style.display = "none";
+            ready6.style.display = "none";
+            ready7.style.display = "none";
+            ready8.style.display = "none";
+        }
+
+        home.addEventListener("click", function(){
+            window.location.href="index5-1.html";
+        });
+
+        enter.addEventListener("click", function(){
+            window.location.href="index5-3.html";
+        });
+
+    </script>
+</body>
+</html>
