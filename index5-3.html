@@ -9,18 +9,34 @@
 </head>
 
 <body>
-    <div class="player"></div>
-    <div class="wind"></div>
-    <div class="sun"></div>
-    <div class="item"></div>
+    <audio id="music" loop>
+        <source src="wind_of_hope.mp3" type="audio/mpeg"/>
+    </audio>
+    <div class="player"><img src="player.png" id="player"></div>
+    <div class="wind"><img src="wind.png" alt=""></div>
+    <div class="sun"><img src="sun.png" alt=""></div>
+    <div class="item"><img src="item.png" alt=""></div>
     <div class="textbox">
         <div class="text" id="text1">聊天聊天</div>
         <div class="text" id="text2">找到道具了！</div>
     </div>
     <div class="exit">EXIT</div>
+
+    <div class="startpage" onclick="go()">
+        <p>※此為測試版本，僅作為功能與格式示範，圖片與內容皆可再討論調整。<br>
+            ※A:對話，Z:撿道具，X:關閉對話框</p>
+        <p>點擊頁面開始遊戲</p> 
+    </div>
     
     <script>
-        var player = document.querySelector(".player");
+        var starepage = document.querySelector(".startpage");
+        var music = document.getElementById("music");
+        function go(){
+            starepage.style.display = "none";
+            music.play();
+        }
+
+        var player = document.getElementById("player");
 
         var textbox = document.querySelector(".textbox");
     
@@ -43,19 +59,19 @@
         document.addEventListener("keydown", function(e){
             if(e.keyCode == 38){        /*上*/
                 var t=css(player,'top');
-                css(player,'top',t-5);
+                css(player,'top',t-3);
             }
             if(e.keyCode == 39){        /*右*/
                 var l=css(player,'left');
-                css(player,'left',l+5);
+                css(player,'left',l+3);
             }
             if(e.keyCode == 40){        /*下*/
                 var t=css(player,'top');
-                css(player,'top',t+5);
+                css(player,'top',t+3);
             }
             if(e.keyCode == 37){        /*左*/
                 var l=css(player,'left');
-                css(player,'left',l-5);
+                css(player,'left',l-3);
             }
 
             if(e.keyCode == 65){        /*A*/
@@ -78,5 +94,6 @@
             window.location.href="index5-2.html";
         })
     </script>
+    
 </body>
 </html>

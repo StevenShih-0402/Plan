@@ -7,47 +7,44 @@ body{
     padding: 0;
 }
 
-.player{
+.player img{
     width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #2d3436;
+    height: 75px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.wind{
-    width: 200px;
+.wind img{
+    width: 300px;
     height: 200px;
-    border-radius: 10px;
-    background: #55efc4;
     position: absolute;
     top: 20%;
     left: 20%;
     transform: translateX(-20%);
+    z-index: 0;
 }
 
-.sun{
+.sun img{
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    background: #d63031;
     position: absolute;
     top: 20%;
     left: 80%;
     transform: translateX(-80%);
+    z-index: 0;
 }
 
-.item{
-    width: 20px;
+.item img{
+    width: 50px;
     height: 50px;
     background: #6c5ce7;
     position: absolute;
     top: 70%;
     left: 30%;
     transform: rotate(30deg);
+    z-index: 0;
 }
 
 .textbox{
@@ -84,8 +81,39 @@ body{
     top: 2%;
     right: 2%;
     transform: translateX(2%);
+    z-index: 0;
 }
 .exit:hover{
     background: #fd79a8;
     cursor: pointer;
+}
+
+.startpage{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    z-index: 3;
+}
+
+.startpage p{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: aliceblue;
+    z-index: 3;
+}
+
+.startpage p:nth-child(1){
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+.startpage p:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
