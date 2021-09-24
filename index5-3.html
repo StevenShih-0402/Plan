@@ -12,10 +12,10 @@
     <audio id="music" loop>
         <source src="wind_of_hope.mp3" type="audio/mpeg"/>
     </audio>
-    <div class="player"><img src="player.png" id="player"></div>
-    <div class="wind"><img src="wind.png" alt=""></div>
-    <div class="sun"><img src="sun.png" alt=""></div>
-    <div class="item"><img src="item.png" alt=""></div>
+    <img src="player.png" id="player">
+    <img src="wind.png" id="wind">
+    <img src="sun.png" id="sun">
+    <img src="item.png" id="item">
     <div class="textbox">
         <div class="text" id="text1">聊天聊天</div>
         <div class="text" id="text2">找到道具了！</div>
@@ -23,7 +23,7 @@
     <div class="exit">EXIT</div>
 
     <div class="startpage" onclick="go()">
-        <p>※此為測試版本，僅作為功能與格式示範，圖片與內容皆可再討論調整。<br>
+        <p>※此為測試版本，僅作為功能與格式的想法呈現，圖片與內容皆可再討論調整。<br>
             ※A:對話，Z:撿道具，X:關閉對話框</p>
         <p>點擊頁面開始遊戲</p> 
     </div>
@@ -31,12 +31,23 @@
     <script>
         var starepage = document.querySelector(".startpage");
         var music = document.getElementById("music");
-        function go(){
-            starepage.style.display = "none";
-            music.play();
-        }
 
         var player = document.getElementById("player");
+        var wind = document.getElementById("wind");
+        var sun = document.getElementById("sun");
+        var item = document.getElementById("item");
+
+        var exit = document.querySelector(".exit");
+
+        function go(){
+            starepage.style.display = "none";
+            player.style.display = "block";
+            wind.style.display = "block";
+            sun.style.display = "block";
+            item.style.display = "block";
+            exit.style.display = "block";
+            music.play();
+        }
 
         var textbox = document.querySelector(".textbox");
     
@@ -59,20 +70,21 @@
         document.addEventListener("keydown", function(e){
             if(e.keyCode == 38){        /*上*/
                 var t=css(player,'top');
-                css(player,'top',t-3);
+                css(player,'top',t-10);
             }
             if(e.keyCode == 39){        /*右*/
                 var l=css(player,'left');
-                css(player,'left',l+3);
+                css(player,'left',l+10);
             }
             if(e.keyCode == 40){        /*下*/
                 var t=css(player,'top');
-                css(player,'top',t+3);
+                css(player,'top',t+10);
             }
             if(e.keyCode == 37){        /*左*/
                 var l=css(player,'left');
-                css(player,'left',l-3);
+                css(player,'left',l-10);
             }
+            
 
             if(e.keyCode == 65){        /*A*/
                 textbox.style.display = "block";
@@ -89,7 +101,7 @@
             }
         })
 
-        var exit = document.querySelector(".exit");
+
         exit.addEventListener("click", function(){
             window.location.href="index5-2.html";
         })
