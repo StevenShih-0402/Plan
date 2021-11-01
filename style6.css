@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap");
+html{
+    background: #48dbfb;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+body{
+    margin: 0;
+    font-family: "Noto Serif TC";
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.header{
+    background: #0abde3;
+    margin: 0;
+    padding: 30px 0 40px 0;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+}
+
+.content{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.part{
+    margin: 60px 0 0 0;
+    box-shadow: rgba(37, 204, 247,1.0) 0 0 5px;
+    border-radius: 10px;
+    padding: 10px 50px 10px 50px;
+    background: rgba(37, 204, 247,0.7);
+}
+
+.part:last-child{
+    margin: 60px 0 60px 0;
+}
+.part:last-child li, .part:nth-last-child(2) li, .part:nth-last-child(4) li{
+    margin: 20px 0 0 0;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgba(46, 134, 222,1.0);
+    font-weight: 700;
+}
+a:hover{
+    color: rgba(46, 134, 222,0.7);
+}
+
+li{
+    margin: 50px 0 0 0;
+}
+
+.box{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.footer{
+    background: #0abde3;
+    text-align: center;
+    padding: 25px;
+}
