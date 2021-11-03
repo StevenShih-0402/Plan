@@ -33,3 +33,9 @@
 方案六：[童書RPG-以《伊索寓言》為例](https://stevenshih-0402.github.io/Plan/index5.html)
 
 >針對VR閱讀器去做改良的提案。
+
+---
+
+方案七：[VR空間設計](https://stevenshih-0402.github.io/Plan/index6.html)
+
+>
