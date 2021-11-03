@@ -42,7 +42,9 @@ h1{
 .part:last-child li, .part:nth-last-child(2) li, .part:nth-last-child(4) li{
     margin: 20px 0 0 0;
 }
-
+mark{
+    background: aquamarine;
+}
 
 a{
     text-decoration: none;
@@ -69,4 +71,19 @@ li{
     background: #0abde3;
     text-align: center;
     padding: 25px;
+}
+
+@media(max-width:500px){
+    body{
+        line-height: 28px;
+    }
+    h2{
+        text-align: center;
+    }
+    .content{
+        width: 90%;
+    }
+    .part{
+        padding: 15px;
+    }
 }
