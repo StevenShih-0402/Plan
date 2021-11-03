@@ -36,6 +36,7 @@
 
 ---
 
-方案七：[VR空間設計](https://stevenshih-0402.github.io/Plan/index6.html)
+方案七：[VR場域規劃](https://stevenshih-0402.github.io/Plan/index6.html)
 
->
+>主要是朝著操作簡易、實用、自由度高、親子同樂和創新的方向去想
+>空間設計的VR軟體雖然已經有很多，但標記重點的功能，是我在相同的VR應用程式中比較沒看到的功能，我不知道能不能算是創新。
