@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap");
 html{
-    background: #5f27cd;
+    background: #1e3799;
     color: black;
     letter-spacing: 1px;
     font-weight: 500;
@@ -13,7 +13,7 @@ body{
 }
 
 .header{
-    background: #341f97;
+    background: #0c2461;
     margin: 0;
     padding: 30px 0 40px 0;
 }
@@ -31,10 +31,10 @@ h1{
 
 .part{
     margin: 60px 0 0 0;
-    box-shadow: rgba(52, 31, 151,1.0) 0 0 5px;
+    box-shadow: rgba(12, 36, 97,1.0) 0 0 5px;
     border-radius: 10px;
     padding: 10px 50px 10px 50px;
-    background: rgba(52, 31, 151,0.7);
+    background: rgba(12, 36, 97,0.7);
     color: white;
 }
 
@@ -45,16 +45,26 @@ h1{
     margin: 20px 0 0 0;
 }
 mark{
-    background: aquamarine;
+    background: #3c6382;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
 }
-
+h4{
+    font-size: 1.17em;
+    background: rgb(51, 105, 185);
+    display: inline-block;
+}
+h4 > mark{
+    padding: 5px;
+}
 a{
     text-decoration: none;
-    color: rgba(10, 189, 227,1.0);
+    color: rgba(74, 105, 189,1.0);
     font-weight: 700;
 }
 a:hover{
-    color: rgba(10, 189, 227,0.7);
+    color: rgba(74, 105, 189,0.7);
 }
 
 li{
@@ -69,8 +79,12 @@ li{
     margin: 0 auto;
 }
 
+table,tr,th,td{
+    border: 1px solid white;
+}
+
 .footer{
-    background: #341f97;
+    background: #0c2461;
     text-align: center;
     padding: 25px;
     color: white;
