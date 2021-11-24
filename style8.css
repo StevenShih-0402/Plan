@@ -1,7 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap");
+
 html{
-    background: #1e3799;
-    color: black;
+    --html-color: #1e3799;
+    --font-color: white;
+    --towei-color: #0c2461;
+    --part-shadow: rgba(12, 36, 97,1.0);
+    --part-bkg: rgba(12, 36, 97,0.7);
+    --mark-color: #3c6382;
+    --a-color: #78e08f;
+    --a-hover-color: #60a3bc;
+
+    background: var(--html-color);
+    color: var(--font-color);
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -13,7 +23,7 @@ body{
 }
 
 .header{
-    background: #0c2461;
+    background: var(--towei-color);
     margin: 0;
     padding: 30px 0 40px 0;
 }
@@ -21,7 +31,6 @@ body{
 h1{
     text-align: center;
     margin: 0;
-    color: white;
 }
 
 .content{
@@ -31,11 +40,10 @@ h1{
 
 .part{
     margin: 60px 0 0 0;
-    box-shadow: rgba(12, 36, 97,1.0) 0 0 5px;
+    box-shadow: var(--part-shadow) 0 0 5px;
     border-radius: 10px;
     padding: 10px 50px 10px 50px;
-    background: rgba(12, 36, 97,0.7);
-    color: white;
+    background: var(--part-bkg);
 }
 
 .part:last-child{
@@ -45,7 +53,7 @@ h1{
     margin: 20px 0 0 0;
 }
 mark{
-    background: #3c6382;
+    background: var(--mark-color);
     color: white;
     font-weight: 700;
     border-radius: 5px;
@@ -60,11 +68,11 @@ h4 > mark{
 }
 a{
     text-decoration: none;
-    color: rgba(74, 105, 189,1.0);
+    color: var(--a-color);
     font-weight: 700;
 }
 a:hover{
-    color: rgba(74, 105, 189,0.7);
+    color: var(--a-hover-color);
 }
 
 li{
@@ -78,16 +86,21 @@ li{
     border: 1px solid black;
     margin: 0 auto;
 }
-
-table,tr,th,td{
+table{
+    width: 100%;
+}
+td{
+    width: 50%;
+}
+table,tr,td{
     border: 1px solid white;
+    border-collapse: collapse;
 }
 
 .footer{
-    background: #0c2461;
+    background: var(--towei-color);
     text-align: center;
     padding: 25px;
-    color: white;
 }
 
 @media(max-width:500px){
