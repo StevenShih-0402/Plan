@@ -52,3 +52,7 @@
 方案九：[VR資料城市](https://stevenshih-0402.github.io/Plan/index8.html)
 
 >擷取VR與網頁的長處，參考"記帳城市APP"的功能與"Sumikko Farm"的遊戲性所想出的資料統整工具。
+
+11/25:
+將資料具體化，以及將記錄過程轉換成遊戲的概念是可行的，  
+但還需要一個更單一，貼近SDGs的主題。
