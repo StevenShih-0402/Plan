@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap");
+
+html{
+    --html-color: #fad390;
+    --font-color: black;
+    --towei-color: #f6b93b;
+    --part-shadow: rgba(246, 185, 59,1.0);
+    --part-bkg: rgba(246, 185, 59,0.7);
+    --mark-color: #3c6382;
+    --a-color: #eb2f06;
+    --a-hover-color: rgba(229, 142, 38,1.0);
+
+    background: var(--html-color);
+    color: var(--font-color);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+body{
+    margin: 0;
+    font-family: "Noto Serif TC";
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.header{
+    background: var(--towei-color);
+    margin: 0;
+    padding: 30px 0 40px 0;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+}
+
+.content{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.part{
+    margin: 60px 0 0 0;
+    box-shadow: var(--part-shadow) 0 0 5px;
+    border-radius: 10px;
+    padding: 10px 50px 10px 50px;
+    background: var(--part-bkg);
+}
+
+.part:last-child{
+    margin: 60px 0 60px 0;
+}
+
+mark{
+    background: var(--mark-color);
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+h4{
+    font-size: 1.17em;
+    background: rgb(51, 105, 185);
+    display: inline-block;
+}
+h4 > mark{
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: var(--a-color);
+    font-weight: 700;
+}
+a:hover{
+    color: var(--a-hover-color);
+}
+
+li{
+    margin: 50px 0 0 0;
+}
+
+.box{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+table{
+    width: 100%;
+}
+td{
+    width: 50%;
+}
+table,tr,td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+img{
+    width: 100%;
+}
+
+.footer{
+    background: var(--towei-color);
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width:500px){
+    body{
+        line-height: 28px;
+    }
+    h2{
+        text-align: center;
+    }
+    .content{
+        width: 90%;
+    }
+    .part{
+        padding: 15px;
+    }
+}
