@@ -6,7 +6,8 @@ html{
     --towei-color: #f6b93b;
     --part-shadow: rgba(246, 185, 59,1.0);
     --part-bkg: rgba(246, 185, 59,0.7);
-    --mark-color: #3c6382;
+    --mark-color: rgba(250, 177, 160,0.5);
+    --mark-word: black;
     --a-color: #eb2f06;
     --a-hover-color: rgba(229, 142, 38,1.0);
 
@@ -52,9 +53,9 @@ h1{
 
 mark{
     background: var(--mark-color);
-    color: white;
+    color: var(--mark-word);
     font-weight: 700;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 h4{
     font-size: 1.17em;
@@ -77,22 +78,16 @@ li{
     margin: 50px 0 0 0;
 }
 
-.box{
-    position: relative;
-    width: 500px;
-    height: 200px;
-    border: 1px solid black;
-    margin: 0 auto;
-}
 table{
     width: 100%;
+    margin-bottom: 40px;
 }
-td{
-    width: 50%;
+table,tr,th,td{
+    border: 1px solid black;
 }
-table,tr,td{
-    border: 1px solid white;
-    border-collapse: collapse;
+th,td{
+    width: calc(100% / 8);
+    text-align: center;
 }
 
 img{
@@ -113,7 +108,22 @@ img{
         text-align: center;
     }
     .content{
-        width: 90%;
+        width: 95%;
+    }
+    .part{
+        padding: 15px;
+    }
+}
+
+@media(max-width:1000px){
+    body{
+        line-height: 24px;
+    }
+    h2{
+        text-align: center;
+    }
+    .content{
+        width: 80%;
     }
     .part{
         padding: 15px;
